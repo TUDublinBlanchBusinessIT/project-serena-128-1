@@ -8,7 +8,9 @@ include ("dbcon.php");
 $sql = "insert into football player(firstname, surname, dateofbirth,)
 values ('$fn','$sn', '$dob')";
 
-echo $sql;
+//echo $sql;
 mysqli_query($con,$ql);
 mysqli_close();
+
+echo "Football Player inserted";
 ?>
