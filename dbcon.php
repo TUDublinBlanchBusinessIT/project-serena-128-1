@@ -2,7 +2,8 @@
 $servername="localhost";
 $username="root";
 $password="";
-$dbname="football players";
+$dbname="football.db";
+s
 //Create connection
 $con = mysqli_connect ($servername, $username, $password, $dbname);
 //Check connection

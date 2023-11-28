@@ -13,4 +13,4 @@ mysqli_query($con,$ql);
 mysqli_close($con);
 
 echo "Football Player inserted";
-?>ss
+?>
