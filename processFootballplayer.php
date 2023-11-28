@@ -10,7 +10,7 @@ values ('$fn','$sn', '$dob')";
 
 //echo $sql;
 mysqli_query($con,$ql);
-mysqli_close();
+mysqli_close($con);
 
 echo "Football Player inserted";
-?>
+?>ss
