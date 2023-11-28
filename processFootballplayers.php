@@ -12,6 +12,10 @@ echo "$firstname $surname $dateofbirth";
 
 $sql = INSERT INTO employee(firstname,surname,dateofbirth) VALUES ('Sam','Philips','2001-03-11')
 
-mysqli_query($conn,$sql);
-
+if (mysqli_query($conn,$sql)) {
+    echo "new record inserted";
+}
+else {
+    echo "error";
+}
 ?>
