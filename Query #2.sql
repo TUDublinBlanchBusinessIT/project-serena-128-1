@@ -1,2 +1,1 @@
-use football player;
-SELECT * FROM football player
+SELECT * FROM footballplayers
