@@ -3,6 +3,7 @@
 
 
 include("dbcon.php");
+
 $sql = "select * from employee";
 
 echo "<TABLE border='1'>";
@@ -12,7 +13,7 @@ while($row=mysqli_fetch_assoc($result)) {
     $sn= $row['surname'];
     $dob= $row['dateofbirth'];
     
-    echo "<TR><TD>$fn</TD><TD>$sn</TD><TD> $dob</TR><TD>";
+    echo "<TR><TD>$fn</TD><TD>$sn</TD><TD> $dob</TD><TD>";
 }
 
 echo "</TABLE>";
