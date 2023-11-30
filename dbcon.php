@@ -2,7 +2,7 @@
 $servername="localhost";
 $username="root";
 $password="";
-$dbname="football.db";
+$dbname="footballplayers";
 $port= "3306";
 //Create connection
 $con = mysqli_connect ($servername, $username, $password, $dbname);
