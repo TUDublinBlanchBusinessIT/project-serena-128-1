@@ -4,10 +4,11 @@
 
 include("dbcon.php");
 
-$sql = "select * from employee";
+$sql = "select * from footballplayers";
 
 echo "<TABLE border='1'>";
 $result = mysqli_query($con,$sql);
+
 while($row=mysqli_fetch_assoc($result)) {
     $fn= $row['firstname'];
     $sn= $row['surname'];
