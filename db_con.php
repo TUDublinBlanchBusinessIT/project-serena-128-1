@@ -1,13 +1,12 @@
 <?php
 
-$usr = $_POST['username'];
-$pwd = $_POST['passwd'];
+$mysql_host = "javelin";
+$mysql_database = "B00005555";
+$mysql_user = "B00005555";
+$mysql_password = "B00005555";
 
-require('db_con.php');
 
-$con =mysqli_connect($mysqli_hostname,$mysqli_user,$mysqli_password,$mysqli_database);
 
-$sql = 'select pwd from registeredUser where username='$usr';
 
 
 ?>
