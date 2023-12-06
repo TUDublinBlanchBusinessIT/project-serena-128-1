@@ -5,7 +5,7 @@ $pwd = $_POST['passwd'];
 
 require('db_con.php');
 
-$con = mysqli_connect($mysql_host,$mysql_user,$mysql_password,$mysql_database);
+$con = mysqli_connect ($servername, $username, $password, $dbname);
 
 $sql = "select pwd from registeredUser where userName='$usr'";
 
@@ -18,14 +18,14 @@ while($row = $result->fetch_assoc())
 if ($dBpwd==$pwd)
 {
     //echo "password match";
-    session_start();
-    $_SESSION['username'] = $usr;
-    header('Location : loggedIn.html');
+    //session_start();
+    //$_SESSION['username'] = $usr;
+    //header('Location: loggedIn.html');
 }
 else
 {
     //echo "passwords do not match";
-    header('Location : loginTryAgain.html');
+    //header('Location : loginTryAgain.html');
 }
 
 
