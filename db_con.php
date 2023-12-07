@@ -2,7 +2,7 @@
 $servername="localhost";
 $username="root";
 $password="";
-$dbname="registeredUsers";
+$dbname="footballplayers";
 
 
 ?>
