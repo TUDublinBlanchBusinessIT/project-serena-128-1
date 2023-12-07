@@ -5,9 +5,9 @@ $pwd = $_POST['passwd'];
 
 require('db_con.php');
 
-$con = mysqli_connect ($servername, $username, $password, $dbname);
+$con = mysqli_connect($servername, $username, $password, $dbname);
 
-$sql = "select pwd from registeredUser where userName='$usr'";
+$sql = "select pwd from registeredUsers where userName='$usr'";
 
 $result = mysqli_query($con,$sql);
 
