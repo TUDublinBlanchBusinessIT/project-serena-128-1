@@ -6,9 +6,9 @@ $height = $_POST['hght'];
 
 include ("dbcon.php");
 
-$sql = "INSERT INTO footballplayers(firstname,surname,dateofbirth,height) VALUES ('$firstname','$surname','$dateofbirth','$height')";
+$sql =INSERT INTO footballplayer(firstname,surname,dateofbirth,height) VALUES ('$firstname','$surname','$dateofbirth','$height')";
 
-//echo $sql;
+echo $sql;
 mysqli_query($con,$sql);
 mysqli_close($con);
 

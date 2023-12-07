@@ -4,7 +4,7 @@
 
 include("dbcon.php");
 
-$sql = "select * from footballplayers";
+$sql = "select * from footballplayer";
 
 echo "<TABLE border='1'>";
 $result = mysqli_query($con,$sql);
@@ -15,7 +15,7 @@ while($row=mysqli_fetch_assoc($result)) {
     $dob= $row['dateofbirth'];
     $hght= $row['height'];
     
-    echo "<TR><TD>$fn</TD><TD>$sn</TD><TD> $dob</TD><TD>";
+    echo "<TR><TD>$fn</TD><TD>$sn</TD><TD>$dob</TD><TD>$hght</TD></TR>";
 }
 
 echo "</TABLE>";
