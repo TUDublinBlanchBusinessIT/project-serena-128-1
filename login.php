@@ -28,7 +28,7 @@ if ($dBpwd==$pwd)
 }
 else
 {
-    echo "passwords do not match";
+    //echo "passwords do not match";
     //header('Location : loginTryAgain.html');
 }
 
