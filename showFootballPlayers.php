@@ -14,8 +14,9 @@ while($row=mysqli_fetch_assoc($result)) {
     $sn= $row['surname'];
     $dob= $row['dateofbirth'];
     $hght= $row['height'];
+    $gender= $row['gender'];
     
-    echo "<TR><TD>$fn</TD><TD>$sn</TD><TD>$dob</TD><TD>$hght</TD></TR>";
+    echo "<TR><TD>$fn</TD><TD>$sn</TD><TD>$dob</TD><TD>$hght</TD><TD>$gender</TD></TR>";
 }
 
 echo "</TABLE>";
